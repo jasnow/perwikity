@@ -1,0 +1,65 @@
+GIT
+  remote: git://github.com/mislav/will_paginate.git
+  revision: f7b00e2d6ef80d95b144979d95b615a36b973152
+  branch: 2-3-stable
+  specs:
+    will_paginate (2.3.16)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    RedCloth (4.2.9)
+    actionmailer (2.3.17)
+      actionpack (= 2.3.17)
+    actionpack (2.3.17)
+      activesupport (= 2.3.17)
+      rack (~> 1.1.0)
+    activerecord (2.3.17)
+      activesupport (= 2.3.17)
+    activeresource (2.3.17)
+      activesupport (= 2.3.17)
+    activesupport (2.3.17)
+    diff-lcs (1.2.1)
+    grit (2.5.0)
+      diff-lcs (~> 1.1)
+      mime-types (~> 1.15)
+      posix-spawn (~> 0.3.6)
+    mime-types (1.21)
+    posix-spawn (0.3.6)
+    rack (1.1.6)
+    rails (2.3.17)
+      actionmailer (= 2.3.17)
+      actionpack (= 2.3.17)
+      activerecord (= 2.3.17)
+      activeresource (= 2.3.17)
+      activesupport (= 2.3.17)
+      rake (>= 0.8.3)
+    rails-footnotes (3.6.7)
+    rake (0.8.7)
+    restful_authentication (1.1.6)
+      rails (~> 2.3.4)
+    rspec (2.13.0)
+      rspec-core (~> 2.13.0)
+      rspec-expectations (~> 2.13.0)
+      rspec-mocks (~> 2.13.0)
+    rspec-core (2.13.0)
+    rspec-expectations (2.13.0)
+      diff-lcs (>= 1.1.3, < 2.0)
+    rspec-mocks (2.13.0)
+    sqlite3 (1.3.7)
+    sqlite3-ruby (1.3.3)
+      sqlite3 (>= 1.3.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  RedCloth
+  grit
+  rails (~> 2.3.5)
+  rails-footnotes
+  rake (= 0.8.7)
+  restful_authentication
+  rspec
+  sqlite3-ruby
+  will_paginate!

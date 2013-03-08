@@ -90,7 +90,7 @@ class PagesControllerTest < ActionController::TestCase
         @page.reload
         
         post :revert, :id => @page.wiki_title, :revision => @page.log.last
-        assert_equal "Hello world", assigns(:page).title
+        assert_equal "Fantastic Sam", assigns(:page).title
         
         assert_redirected_to page_path(assigns(:page))
       end
