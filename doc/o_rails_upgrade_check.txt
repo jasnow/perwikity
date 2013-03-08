@@ -1,0 +1,50 @@
+(in /Users/whitemac/source/perwikity)
+31m1mNew file needed: config/application.rb0m
+37mYou need to add a config/application.rb.
+1mMore information:0m 36mhttp://omgbloglol.com/post/353978923/the-path-to-rails-3-approaching-the-upgrade
+
+37mThe culprits:
+33m	- config/application.rb
+0m
+31m1mDeprecated ERb helper calls0m
+37mBlock helpers that use concat (e.g., form_for) should use <%= instead of <%.  The current form will continue to work for now, but you will get deprecation warnings since this form will go away in the future.
+1mMore information:0m 36mhttp://weblog.rubyonrails.org/
+
+37mThe culprits:
+33m	- app/views/pages/edit.html.erb
+33m	- app/views/pages/new.html.erb
+33m	- app/views/users/edit.html.erb
+33m	- app/views/users/new.html.erb
+33m	- app/views/sessions/new.html.erb
+0m
+31m1mOld Rails generator API0m
+37mA plugin in the app is using the old generator API (a new one may be available at http://github.com/trydionel/rails3-generators).
+1mMore information:0m 36mhttp://blog.plataformatec.com.br/2010/01/discovering-rails-3-generators/
+
+37mThe culprits:
+33m	- vendor/plugins/acts_like_git/generators/
+33m	- vendor/plugins/acts_like_git/generators/acts_like_git/
+33m	- vendor/plugins/restful_authentication/generators/
+33m	- vendor/plugins/restful_authentication/generators/authenticated/
+0m
+31m1mOld router API0m
+37mThe router API has totally changed.
+1mMore information:0m 36mhttp://yehudakatz.com/2009/12/26/the-rails-3-router-rack-it-up/
+
+37mThe culprits:
+33m	- config/routes.rb
+0m
+31m1mKnown broken plugins0m
+37mAt least one plugin in your app is broken (according to the wiki).  Most of project maintainers are rapidly working towards compatibility, but do be aware you may encounter issues.
+1mMore information:0m 36mhttp://wiki.rubyonrails.org/rails/version3/plugins_and_gems
+
+37mThe culprits:
+33m	- restful_authentication
+0m
+31m1mDeprecated test_help path0m
+37mYou now must require 'rails/test_help' not just 'test_help'.
+1mMore information:0m 36mhttp://weblog.rubyonrails.org/2009/9/1/gem-packaging-best-practices
+
+37mThe culprits:
+33m	- test/test_helper.rb
+0m

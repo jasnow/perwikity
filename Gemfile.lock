@@ -36,6 +36,7 @@ GEM
       rake (>= 0.8.3)
     rails-footnotes (3.6.7)
     rake (0.8.7)
+    rdoc (2.4.3)
     restful_authentication (1.1.6)
       rails (~> 2.3.4)
     rspec (2.13.0)
@@ -59,6 +60,7 @@ DEPENDENCIES
   rails (~> 2.3.5)
   rails-footnotes
   rake (= 0.8.7)
+  rdoc (~> 2.4.2)
   restful_authentication
   rspec
   sqlite3-ruby

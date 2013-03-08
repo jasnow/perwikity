@@ -23,4 +23,7 @@ end
 gem "grit"
 gem "RedCloth"
 gem "restful_authentication"
+
+# For Rails 2.3.5:
 gem "will_paginate", :git => 'git://github.com/mislav/will_paginate.git', :branch => '2-3-stable'
+gem "rdoc", "~> 2.4.2"
